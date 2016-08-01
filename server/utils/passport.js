@@ -1,8 +1,11 @@
 var express = require('express');
 var router = express.Router();
+var Default = require("../models/default.js");
 
-router.get("/", function(req, res, next){
-  res.json(req.isAuthenticated());
+var initValues = new Default({
+
 });
+
+
 
 module.exports = router;

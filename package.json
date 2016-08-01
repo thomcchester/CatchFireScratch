@@ -18,5 +18,24 @@
   "bugs": {
     "url": "https://github.com/thomcchester/CatchFireScratch/issues"
   },
-  "homepage": "https://github.com/thomcchester/CatchFireScratch#readme"
+  "homepage": "https://github.com/thomcchester/CatchFireScratch#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-google-chart": "^0.1.0",
+    "angular-messages": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "angular-slider": "^0.2.3",
+    "bcrypt": "^0.8.7",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-session": "^1.14.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "mongo": "^0.1.0",
+    "mongoose": "^4.5.7",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
+  }
 }
