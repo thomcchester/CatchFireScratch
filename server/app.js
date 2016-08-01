@@ -9,7 +9,6 @@ var mongoose = require('mongoose');
 var Admin = require('./models/admin.js');
 var defaultModel = require('./models/default.js');
 var admin = require('./routes/admin.js');
-var submit = require('./routes/submit.js');
 var index = require('./routes/index.js');
 var default_value = require('./routes/default.js');
 var register = require('./routes/register.js');
@@ -45,12 +44,12 @@ app.use(session({
   key:'user',
   resave: true,
   s: false,
-  cookie: {maxAge:nul, secure: true}
+  cookie: {maxAge:null, secure: true}
 }));
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(passport.initialized());
+app.use(passport.initialize());
 app.use(passport.session());
 
 passport.serializeUser(function(user, done){
@@ -92,7 +91,6 @@ app.get('/checkDB', function(req, res){
 });
 app.use('/reg', register);
 app.use('/defaults', default_value);
-app.use('/submit', submit);
 app.use('/admin', admin);
 app.use('/', index);
 
